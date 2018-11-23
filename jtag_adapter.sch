@@ -1,0 +1,762 @@
+EESchema Schematic File Version 4
+LIBS:jtag_adapter-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J1
+U 1 1 5BF340CB
+P 6350 3900
+F 0 "J1" H 5910 3946 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 5910 3855 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 6400 3350 50  0001 L TNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex_debug_connectors.pdf" V 6000 2650 50  0001 C CNN
+	1    6350 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_20 J4
+U 1 1 5BF341FF
+P 4900 1900
+F 0 "J4" H 4370 1946 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_20" H 4370 1855 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x10_P1.27mm_Vertical_SMD" H 5350 850 50  0001 L TNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf" V 4550 650 50  0001 C CNN
+	1    4900 1900
+	1    0    0    -1  
+$EndComp
+Text Label 5650 1400 0    50   ~ 0
+TRST
+Text Label 5650 1500 0    50   ~ 0
+SRST
+Text Label 5650 1700 0    50   ~ 0
+RTCK
+Text Label 5650 1800 0    50   ~ 0
+TCK-SWDCLK
+Text Label 5650 1900 0    50   ~ 0
+TMS-SWDIO
+Text Label 5650 2000 0    50   ~ 0
+TDO-SWO
+Text Label 5650 2100 0    50   ~ 0
+TDI
+Text Label 5650 2300 0    50   ~ 0
+DBGACK
+Text Label 5650 2400 0    50   ~ 0
+DBGRQ
+$Comp
+L power:GND #PWR06
+U 1 1 5BF3440E
+P 4800 2800
+F 0 "#PWR06" H 4800 2550 50  0001 C CNN
+F 1 "GND" H 4805 2627 50  0000 C CNN
+F 2 "" H 4800 2800 50  0001 C CNN
+F 3 "" H 4800 2800 50  0001 C CNN
+	1    4800 2800
+	1    0    0    -1  
+$EndComp
+Text Label 4800 750  0    50   ~ 0
+VTREF
+$Comp
+L power:VCC #PWR07
+U 1 1 5BF34542
+P 4900 1000
+F 0 "#PWR07" H 4900 850 50  0001 C CNN
+F 1 "VCC" H 4917 1173 50  0000 C CNN
+F 2 "" H 4900 1000 50  0001 C CNN
+F 3 "" H 4900 1000 50  0001 C CNN
+	1    4900 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 750  4800 1100
+Wire Wire Line
+	4900 1100 4900 1000
+Wire Wire Line
+	5650 2400 5500 2400
+Wire Wire Line
+	5500 2300 5650 2300
+Wire Wire Line
+	5650 2100 5500 2100
+Wire Wire Line
+	5500 2000 5650 2000
+Wire Wire Line
+	5650 1900 5500 1900
+Wire Wire Line
+	5500 1800 5650 1800
+Wire Wire Line
+	5650 1700 5500 1700
+Wire Wire Line
+	5500 1500 5650 1500
+Wire Wire Line
+	5650 1400 5500 1400
+Wire Wire Line
+	4800 2800 4800 2700
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_20 J5
+U 1 1 5BF351EC
+P 7700 1850
+F 0 "J5" H 7170 1896 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_20" H 7170 1805 50  0000 R CNN
+F 2 "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical" H 8150 800 50  0001 L TNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf" V 7350 600 50  0001 C CNN
+	1    7700 1850
+	1    0    0    -1  
+$EndComp
+Text Label 8450 1450 0    50   ~ 0
+SRST
+Text Label 8450 1650 0    50   ~ 0
+RTCK
+Text Label 8450 1750 0    50   ~ 0
+TCK-SWDCLK
+Text Label 8450 1850 0    50   ~ 0
+TMS-SWDIO
+Text Label 8450 1950 0    50   ~ 0
+TDO-SWO
+Text Label 8450 2050 0    50   ~ 0
+TDI
+Text Label 8450 2250 0    50   ~ 0
+DBGACK
+Text Label 8450 2350 0    50   ~ 0
+DBGRQ
+$Comp
+L power:GND #PWR014
+U 1 1 5BF351FC
+P 7600 2750
+F 0 "#PWR014" H 7600 2500 50  0001 C CNN
+F 1 "GND" H 7605 2577 50  0000 C CNN
+F 2 "" H 7600 2750 50  0001 C CNN
+F 3 "" H 7600 2750 50  0001 C CNN
+	1    7600 2750
+	1    0    0    -1  
+$EndComp
+Text Label 7600 700  0    50   ~ 0
+VTREF
+$Comp
+L power:VCC #PWR015
+U 1 1 5BF35203
+P 7700 950
+F 0 "#PWR015" H 7700 800 50  0001 C CNN
+F 1 "VCC" H 7717 1123 50  0000 C CNN
+F 2 "" H 7700 950 50  0001 C CNN
+F 3 "" H 7700 950 50  0001 C CNN
+	1    7700 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 700  7600 1050
+Wire Wire Line
+	7700 1050 7700 950 
+Wire Wire Line
+	8450 2350 8300 2350
+Wire Wire Line
+	8300 2250 8450 2250
+Wire Wire Line
+	8450 2050 8300 2050
+Wire Wire Line
+	8300 1950 8450 1950
+Wire Wire Line
+	8450 1850 8300 1850
+Wire Wire Line
+	8300 1750 8450 1750
+Wire Wire Line
+	8450 1650 8300 1650
+Wire Wire Line
+	8300 1450 8450 1450
+Wire Wire Line
+	8450 1350 8300 1350
+Wire Wire Line
+	7600 2750 7600 2650
+Text Label 7000 3600 0    50   ~ 0
+SRST
+Text Label 7000 3800 0    50   ~ 0
+TCK-SWDCLK
+Text Label 7000 3900 0    50   ~ 0
+TMS-SWDIO
+Text Label 7000 4000 0    50   ~ 0
+TDO-SWO
+Text Label 7000 4100 0    50   ~ 0
+TDI
+Wire Wire Line
+	7000 4100 6850 4100
+Wire Wire Line
+	6850 4000 7000 4000
+Wire Wire Line
+	7000 3900 6850 3900
+Wire Wire Line
+	6850 3800 7000 3800
+Wire Wire Line
+	7000 3600 6850 3600
+$Comp
+L power:GND #PWR01
+U 1 1 5BF38473
+P 6300 4600
+F 0 "#PWR01" H 6300 4350 50  0001 C CNN
+F 1 "GND" H 6305 4427 50  0000 C CNN
+F 2 "" H 6300 4600 50  0001 C CNN
+F 3 "" H 6300 4600 50  0001 C CNN
+	1    6300 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4550 6350 4550
+Wire Wire Line
+	6350 4550 6350 4500
+Wire Wire Line
+	6300 4550 6300 4600
+Wire Wire Line
+	6250 4500 6250 4550
+Wire Wire Line
+	6250 4550 6300 4550
+Connection ~ 6300 4550
+$Comp
+L Connector:AVR-JTAG-10 J6
+U 1 1 5BF39C68
+P 9950 1750
+F 0 "J6" H 9570 1796 50  0000 R CNN
+F 1 "AVR-JTAG-10" H 9570 1705 50  0000 R CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" V 9800 1900 50  0001 C CNN
+F 3 " ~" H 8675 1200 50  0001 C CNN
+	1    9950 1750
+	1    0    0    -1  
+$EndComp
+Text Label 9850 1100 2    50   ~ 0
+VTREF
+$Comp
+L power:VCC #PWR016
+U 1 1 5BF39FB4
+P 9950 1000
+F 0 "#PWR016" H 9950 850 50  0001 C CNN
+F 1 "VCC" V 9967 1173 50  0000 C CNN
+F 2 "" H 9950 1000 50  0001 C CNN
+F 3 "" H 9950 1000 50  0001 C CNN
+	1    9950 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 1000 9950 1150
+Text Label 10600 1650 0    50   ~ 0
+TCK-SWDCLK
+Text Label 10600 1750 0    50   ~ 0
+TMS-SWDIO
+Text Label 10600 1850 0    50   ~ 0
+TDO-SWO
+Text Label 10600 1950 0    50   ~ 0
+TDI
+Wire Wire Line
+	10600 1950 10450 1950
+Wire Wire Line
+	10450 1850 10600 1850
+Wire Wire Line
+	10600 1750 10450 1750
+Wire Wire Line
+	10450 1650 10600 1650
+Text Label 8450 1350 0    50   ~ 0
+TRST
+Text Label 10600 1550 0    50   ~ 0
+TRST
+Text Label 10600 1450 0    50   ~ 0
+SRST
+Wire Wire Line
+	10450 1450 10600 1450
+Wire Wire Line
+	10600 1550 10450 1550
+Wire Wire Line
+	9850 1100 9850 1150
+$Comp
+L power:GND #PWR013
+U 1 1 5BF431C2
+P 10600 4300
+F 0 "#PWR013" H 10600 4050 50  0001 C CNN
+F 1 "GND" H 10605 4127 50  0000 C CNN
+F 2 "" H 10600 4300 50  0001 C CNN
+F 3 "" H 10600 4300 50  0001 C CNN
+	1    10600 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5BF4323C
+P 10600 3650
+F 0 "D3" V 10638 3533 50  0000 R CNN
+F 1 "LED" V 10547 3533 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10600 3650 50  0001 C CNN
+F 3 "~" H 10600 3650 50  0001 C CNN
+	1    10600 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BF43369
+P 10600 3350
+F 0 "R3" H 10670 3396 50  0000 L CNN
+F 1 "330" H 10670 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10530 3350 50  0001 C CNN
+F 3 "~" H 10600 3350 50  0001 C CNN
+	1    10600 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 4300 10600 3800
+$Comp
+L power:VCC #PWR012
+U 1 1 5BF44CB6
+P 10600 3200
+F 0 "#PWR012" H 10600 3050 50  0001 C CNN
+F 1 "VCC" V 10617 3373 50  0000 C CNN
+F 2 "" H 10600 3200 50  0001 C CNN
+F 3 "" H 10600 3200 50  0001 C CNN
+	1    10600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5BF467E1
+P 8600 4300
+F 0 "#PWR09" H 8600 4050 50  0001 C CNN
+F 1 "GND" H 8605 4127 50  0000 C CNN
+F 2 "" H 8600 4300 50  0001 C CNN
+F 3 "" H 8600 4300 50  0001 C CNN
+	1    8600 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5BF467E7
+P 8600 3650
+F 0 "D1" V 8638 3533 50  0000 R CNN
+F 1 "LED" V 8547 3533 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8600 3650 50  0001 C CNN
+F 3 "~" H 8600 3650 50  0001 C CNN
+	1    8600 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BF467EE
+P 8600 3350
+F 0 "R1" H 8670 3396 50  0000 L CNN
+F 1 "330" H 8670 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8530 3350 50  0001 C CNN
+F 3 "~" H 8600 3350 50  0001 C CNN
+	1    8600 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR08
+U 1 1 5BF467F7
+P 8600 3200
+F 0 "#PWR08" H 8600 3050 50  0001 C CNN
+F 1 "VCC" V 8617 3373 50  0000 C CNN
+F 2 "" H 8600 3200 50  0001 C CNN
+F 3 "" H 8600 3200 50  0001 C CNN
+	1    8600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS138 Q1
+U 1 1 5BF476CA
+P 8500 4100
+F 0 "Q1" H 8705 4146 50  0000 L CNN
+F 1 "BSS138" H 8705 4055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8700 4025 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 8500 4100 50  0001 L CNN
+	1    8500 4100
+	1    0    0    -1  
+$EndComp
+Text Label 8200 4100 2    50   ~ 0
+TCK-SWDCLK
+Wire Wire Line
+	8200 4100 8300 4100
+$Comp
+L power:GND #PWR011
+U 1 1 5BF4F5AC
+P 9950 4300
+F 0 "#PWR011" H 9950 4050 50  0001 C CNN
+F 1 "GND" H 9955 4127 50  0000 C CNN
+F 2 "" H 9950 4300 50  0001 C CNN
+F 3 "" H 9950 4300 50  0001 C CNN
+	1    9950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5BF4F5B2
+P 9950 3650
+F 0 "D2" V 9988 3533 50  0000 R CNN
+F 1 "LED" V 9897 3533 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9950 3650 50  0001 C CNN
+F 3 "~" H 9950 3650 50  0001 C CNN
+	1    9950 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BF4F5B9
+P 9950 3350
+F 0 "R2" H 10020 3396 50  0000 L CNN
+F 1 "330" H 10020 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9880 3350 50  0001 C CNN
+F 3 "~" H 9950 3350 50  0001 C CNN
+	1    9950 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR010
+U 1 1 5BF4F5C0
+P 9950 3200
+F 0 "#PWR010" H 9950 3050 50  0001 C CNN
+F 1 "VCC" V 9967 3373 50  0000 C CNN
+F 2 "" H 9950 3200 50  0001 C CNN
+F 3 "" H 9950 3200 50  0001 C CNN
+	1    9950 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS138 Q2
+U 1 1 5BF4F5C6
+P 9850 4100
+F 0 "Q2" H 10055 4146 50  0000 L CNN
+F 1 "BSS138" H 10055 4055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10050 4025 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 9850 4100 50  0001 L CNN
+	1    9850 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 4100 9650 4100
+Text Label 9550 4100 2    50   ~ 0
+TMS-SWDIO
+Wire Wire Line
+	8600 3900 8600 3800
+Wire Wire Line
+	9950 3800 9950 3900
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J3
+U 1 1 5BF5AC62
+P 3600 4050
+F 0 "J3" H 3160 4096 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 3160 4005 50  0000 R CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 3650 3500 50  0001 L TNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex_debug_connectors.pdf" V 3250 2800 50  0001 C CNN
+	1    3600 4050
+	1    0    0    -1  
+$EndComp
+Text Label 4250 3750 0    50   ~ 0
+SRST
+Text Label 4250 3950 0    50   ~ 0
+TCK-SWDCLK
+Text Label 4250 4050 0    50   ~ 0
+TMS-SWDIO
+Text Label 4250 4150 0    50   ~ 0
+TDO-SWO
+Text Label 4250 4250 0    50   ~ 0
+TDI
+Wire Wire Line
+	4250 4250 4100 4250
+Wire Wire Line
+	4100 4150 4250 4150
+Wire Wire Line
+	4250 4050 4100 4050
+Wire Wire Line
+	4100 3950 4250 3950
+Wire Wire Line
+	4250 3750 4100 3750
+Text Label 4050 3100 0    50   ~ 0
+VTREF
+$Comp
+L power:VCC #PWR04
+U 1 1 5BF5AC74
+P 3000 3100
+F 0 "#PWR04" H 3000 2950 50  0001 C CNN
+F 1 "VCC" V 3017 3273 50  0000 C CNN
+F 2 "" H 3000 3100 50  0001 C CNN
+F 3 "" H 3000 3100 50  0001 C CNN
+	1    3000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Bridged12 JP1
+U 1 1 5BF5AC7A
+P 3600 3100
+F 0 "JP1" H 3600 3304 50  0000 C CNN
+F 1 "Jumper_3_Bridged12" H 3600 3213 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3600 3100 50  0001 C CNN
+F 3 "~" H 3600 3100 50  0001 C CNN
+	1    3600 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3100 3350 3100
+Wire Wire Line
+	3850 3100 4050 3100
+$Comp
+L power:GND #PWR05
+U 1 1 5BF5AC84
+P 3550 4750
+F 0 "#PWR05" H 3550 4500 50  0001 C CNN
+F 1 "GND" H 3555 4577 50  0000 C CNN
+F 2 "" H 3550 4750 50  0001 C CNN
+F 3 "" H 3550 4750 50  0001 C CNN
+	1    3550 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4700 3600 4700
+Wire Wire Line
+	3600 4700 3600 4650
+Wire Wire Line
+	3550 4700 3550 4750
+Wire Wire Line
+	3500 4650 3500 4700
+Wire Wire Line
+	3500 4700 3550 4700
+Connection ~ 3550 4700
+Text Label 3800 3350 0    50   ~ 0
+VCC_SELECT
+Wire Wire Line
+	3800 3350 3600 3350
+Wire Wire Line
+	3600 3350 3600 3250
+Wire Wire Line
+	3600 3350 3600 3450
+Connection ~ 3600 3350
+Text Label 6350 3250 0    50   ~ 0
+VCC_SELECT
+Wire Wire Line
+	6350 3250 6350 3300
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_20 J2
+U 1 1 5BF69159
+P 2050 1850
+F 0 "J2" H 1520 1896 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_20" H 1520 1805 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Horizontal" H 2500 800 50  0001 L TNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf" V 1700 600 50  0001 C CNN
+	1    2050 1850
+	1    0    0    -1  
+$EndComp
+Text Label 2800 1350 0    50   ~ 0
+TRST
+Text Label 2800 1450 0    50   ~ 0
+SRST
+Text Label 2800 1650 0    50   ~ 0
+RTCK
+Text Label 2800 1750 0    50   ~ 0
+TCK-SWDCLK
+Text Label 2800 1850 0    50   ~ 0
+TMS-SWDIO
+Text Label 2800 1950 0    50   ~ 0
+TDO-SWO
+Text Label 2800 2050 0    50   ~ 0
+TDI
+Text Label 2800 2250 0    50   ~ 0
+DBGACK
+Text Label 2800 2350 0    50   ~ 0
+DBGRQ
+$Comp
+L power:GND #PWR02
+U 1 1 5BF69169
+P 1950 2750
+F 0 "#PWR02" H 1950 2500 50  0001 C CNN
+F 1 "GND" H 1955 2577 50  0000 C CNN
+F 2 "" H 1950 2750 50  0001 C CNN
+F 3 "" H 1950 2750 50  0001 C CNN
+	1    1950 2750
+	1    0    0    -1  
+$EndComp
+Text Label 1950 700  0    50   ~ 0
+VTREF
+$Comp
+L power:VCC #PWR03
+U 1 1 5BF69170
+P 2050 950
+F 0 "#PWR03" H 2050 800 50  0001 C CNN
+F 1 "VCC" H 2067 1123 50  0000 C CNN
+F 2 "" H 2050 950 50  0001 C CNN
+F 3 "" H 2050 950 50  0001 C CNN
+	1    2050 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 700  1950 1050
+Wire Wire Line
+	2050 1050 2050 950 
+Wire Wire Line
+	2800 2350 2650 2350
+Wire Wire Line
+	2650 2250 2800 2250
+Wire Wire Line
+	2800 2050 2650 2050
+Wire Wire Line
+	2650 1950 2800 1950
+Wire Wire Line
+	2800 1850 2650 1850
+Wire Wire Line
+	2650 1750 2800 1750
+Wire Wire Line
+	2800 1650 2650 1650
+Wire Wire Line
+	2650 1450 2800 1450
+Wire Wire Line
+	2800 1350 2650 1350
+Wire Wire Line
+	1950 2750 1950 2650
+$Comp
+L Connector:AVR-ISP-6 J7
+U 1 1 5BF51311
+P 1400 6300
+F 0 "J7" H 1120 6396 50  0000 R CNN
+F 1 "AVR-ISP-6" H 1120 6305 50  0000 R CNN
+F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical" V 1150 6350 50  0001 C CNN
+F 3 " ~" H 125 5750 50  0001 C CNN
+	1    1400 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5BF516E1
+P 1300 6700
+F 0 "#PWR0101" H 1300 6450 50  0001 C CNN
+F 1 "GND" H 1305 6527 50  0000 C CNN
+F 2 "" H 1300 6700 50  0001 C CNN
+F 3 "" H 1300 6700 50  0001 C CNN
+	1    1300 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0102
+U 1 1 5BF5176E
+P 1300 5800
+F 0 "#PWR0102" H 1300 5650 50  0001 C CNN
+F 1 "VCC" H 1317 5973 50  0000 C CNN
+F 2 "" H 1300 5800 50  0001 C CNN
+F 3 "" H 1300 5800 50  0001 C CNN
+	1    1300 5800
+	1    0    0    -1  
+$EndComp
+Text Label 1950 6100 0    50   ~ 0
+MISO
+Text Label 1950 6200 0    50   ~ 0
+MOSI
+Text Label 1950 6300 0    50   ~ 0
+SCK
+Text Label 1950 6400 0    50   ~ 0
+RST
+Wire Wire Line
+	1950 6100 1800 6100
+Wire Wire Line
+	1800 6200 1950 6200
+Wire Wire Line
+	1950 6300 1800 6300
+Wire Wire Line
+	1800 6400 1950 6400
+$Comp
+L Connector:AVR-ISP-10 J9
+U 1 1 5BF6193F
+P 4700 6250
+F 0 "J9" H 4420 6346 50  0000 R CNN
+F 1 "AVR-ISP-10" H 4420 6255 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" V 4450 6300 50  0001 C CNN
+F 3 " ~" H 3425 5700 50  0001 C CNN
+	1    4700 6250
+	1    0    0    -1  
+$EndComp
+Text Label 5250 6050 0    50   ~ 0
+MISO
+Text Label 5250 6150 0    50   ~ 0
+MOSI
+Text Label 5250 6250 0    50   ~ 0
+SCK
+Text Label 5250 6350 0    50   ~ 0
+RST
+Wire Wire Line
+	5250 6050 5100 6050
+Wire Wire Line
+	5100 6150 5250 6150
+Wire Wire Line
+	5250 6250 5100 6250
+Wire Wire Line
+	5100 6350 5250 6350
+$Comp
+L power:VCC #PWR0103
+U 1 1 5BF64839
+P 4600 5750
+F 0 "#PWR0103" H 4600 5600 50  0001 C CNN
+F 1 "VCC" H 4617 5923 50  0000 C CNN
+F 2 "" H 4600 5750 50  0001 C CNN
+F 3 "" H 4600 5750 50  0001 C CNN
+	1    4600 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5BF64868
+P 4600 6650
+F 0 "#PWR0104" H 4600 6400 50  0001 C CNN
+F 1 "GND" H 4605 6477 50  0000 C CNN
+F 2 "" H 4600 6650 50  0001 C CNN
+F 3 "" H 4600 6650 50  0001 C CNN
+	1    4600 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AVR-ISP-10 J8
+U 1 1 5BF67230
+P 3100 6300
+F 0 "J8" H 2820 6396 50  0000 R CNN
+F 1 "AVR-ISP-10" H 2820 6305 50  0000 R CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" V 2850 6350 50  0001 C CNN
+F 3 " ~" H 1825 5750 50  0001 C CNN
+	1    3100 6300
+	1    0    0    -1  
+$EndComp
+Text Label 3650 6100 0    50   ~ 0
+MISO
+Text Label 3650 6200 0    50   ~ 0
+MOSI
+Text Label 3650 6300 0    50   ~ 0
+SCK
+Text Label 3650 6400 0    50   ~ 0
+RST
+Wire Wire Line
+	3650 6100 3500 6100
+Wire Wire Line
+	3500 6200 3650 6200
+Wire Wire Line
+	3650 6300 3500 6300
+Wire Wire Line
+	3500 6400 3650 6400
+$Comp
+L power:VCC #PWR0105
+U 1 1 5BF6723F
+P 3000 5800
+F 0 "#PWR0105" H 3000 5650 50  0001 C CNN
+F 1 "VCC" H 3017 5973 50  0000 C CNN
+F 2 "" H 3000 5800 50  0001 C CNN
+F 3 "" H 3000 5800 50  0001 C CNN
+	1    3000 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5BF67245
+P 3000 6700
+F 0 "#PWR0106" H 3000 6450 50  0001 C CNN
+F 1 "GND" H 3005 6527 50  0000 C CNN
+F 2 "" H 3000 6700 50  0001 C CNN
+F 3 "" H 3000 6700 50  0001 C CNN
+	1    3000 6700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
