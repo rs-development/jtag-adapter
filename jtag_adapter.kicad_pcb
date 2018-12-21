@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.0.1-33cea8e~68~ubuntu18.10.1)
+(kicad_pcb (version 20171130) (host pcbnew 5.0.2-bee76a0~70~ubuntu18.10.1)
 
   (general
     (thickness 1.6)
@@ -11,8 +11,8 @@
 
   (page A4)
   (layers
-    (0 F.Cu mixed hide)
-    (31 B.Cu mixed hide)
+    (0 F.Cu mixed)
+    (31 B.Cu mixed)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -86,7 +86,7 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
       (outputdirectory ""))
   )
@@ -2882,7 +2882,7 @@
   (segment (start 147.32 77.47) (end 147.32 67.31) (width 0.25) (layer B.Cu) (net 25))
   (segment (start 147.32 67.31) (end 149.86 64.77) (width 0.25) (layer B.Cu) (net 25))
 
-  (zone (net 6) (net_name GND) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 6) (net_name GND) (layer F.Cu) (tstamp 5C1D1C6D) (hatch edge 0.508)
     (connect_pads (clearance 0.5))
     (min_thickness 0.254)
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -3351,7 +3351,7 @@
       )
     )
   )
-  (zone (net 6) (net_name GND) (layer B.Cu) (tstamp 5BF801BF) (hatch edge 0.508)
+  (zone (net 6) (net_name GND) (layer B.Cu) (tstamp 5C1D1C6A) (hatch edge 0.508)
     (connect_pads (clearance 0.5))
     (min_thickness 0.254)
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
